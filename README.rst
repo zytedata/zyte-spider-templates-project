@@ -5,8 +5,8 @@ zyte-crawlers-project
 This is a starting template for a `Scrapy
 <https://docs.scrapy.org/en/latest/>`_ project, with built-in integration with
 Zyte technologies (`scrapy-zyte-api
-<https://github.com/scrapy-plugins/scrapy-zyte-api>`_, `zyte-spider-templates
-<https://github.com/zytedata/zyte-spider-templates>`_) and recommended best
+<https://github.com/scrapy-plugins/scrapy-zyte-api>`_, `zyte-crawlers
+<https://github.com/zytedata/zyte-crawlers>`_) and recommended best
 practices (dependency pinning, static code checking, type hints).
 
 Requirements
@@ -52,13 +52,13 @@ Development
 
 -   Run ``pre-commit install`` to enable static code checks before commits.
 
--   Use spiders from `zyte-spider-templates
-    <https://github.com/zytedata/zyte-spider-templates>`_, for example::
+-   Use spiders from `zyte-crawlers
+    <https://github.com/zytedata/zyte-crawlers>`_, for example::
 
         scrapy crawl ecommerce -a url="https://books.toscrape.com/" -o output.jsonl
 
--   Subclass spiders from `zyte-spider-templates
-    <https://github.com/zytedata/zyte-spider-templates>`_or `write spiders
+-   Subclass spiders from `zyte-crawlers
+    <https://github.com/zytedata/zyte-crawlers>`_ or `write spiders
     from scratch <https://docs.scrapy.org/en/latest/topics/spiders.html>`_.
 
     Define your spiders in Python files and modules within
