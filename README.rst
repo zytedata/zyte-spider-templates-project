@@ -5,8 +5,9 @@ zyte-crawlers-project
 This is a starting template for a `Scrapy
 <https://docs.scrapy.org/en/latest/>`_ project, with built-in integration with
 Zyte technologies (`scrapy-zyte-api
-<https://github.com/scrapy-plugins/scrapy-zyte-api>`_, `zyte-spider-templates
-<https://github.com/zytedata/zyte-spider-templates>`_).
+<https://github.com/scrapy-plugins/scrapy-zyte-api>`_,
+`zyte-spider-templates`_).
+
 
 Requirements
 ============
@@ -18,6 +19,7 @@ Requirements
 You also need a `Zyte API`_ subscription.
 
 .. _Zyte API: https://docs.zyte.com/zyte-api/get-started.html
+
 
 First steps
 ===========
@@ -44,6 +46,7 @@ After you clone this repository, follow these step to make it yours:
         git init
         git add -A
         git commit -m "Initial commit"
+
 
 Usage
 =====
@@ -80,13 +83,28 @@ check:
 * `The zyte-spider-templates documentation
   <https://github.com/zytedata/zyte-spider-templates>`_.
 
-Customization
-=============
+You can also run the spiders locally, for example::
 
-By default all spiders and page objects defined in ``zyte-spider-templates``
-are available in this project (because the ``SPIDER_MODULES`` setting value
-includes ``"zyte_spider_templates.spiders"`` and the ``SCRAPY_POET_DISCOVER``
-setting value includes ``"zyte_spider_templates.page_objects"``). You can
-also add your own spiders (to the ``zyte_crawlers_project.spiders`` package)
-and page objects (to the ``zyte_crawlers_project.page_objects`` package) and
-subclass the ``zyte-spider-templates`` ones.
+        scrapy crawl ecommerce -a url="https://books.toscrape.com/" -o output.jsonl
+
+
+Development
+===========
+
+By default all spiders and page objects defined in `zyte-spider-templates`_ are
+available in this project. You can also:
+
+-   Subclass spiders from `zyte-spider-templates`_ or `write spiders
+    from scratch <https://docs.scrapy.org/en/latest/topics/spiders.html>`_.
+
+    Define your spiders in Python files and modules within
+    ``<project ID>/spiders/``.
+￼
+-   Use `web-poet <https://web-poet.readthedocs.io/en/stable/>`_ and
+    `scrapy-poet <https://scrapy-poet.readthedocs.io/en/stable/>`_ to modify
+    the parsing behavior of spiders, in all, some, or specific websites.
+
+    Define your page objects in Python files and modules within
+    ``<project ID>/page_objects/``.
+
+.. _zyte-spider-templates: https://github.com/zytedata/zyte-spider-templates
