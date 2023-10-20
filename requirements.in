@@ -8,3 +8,7 @@ scrapy-zyte-api  # Zyte API integration
 
 # Static code checking
 pre-commit
+
+# TODO: Remove
+zyte-common-items @ git+https://github.com/Gallaecio/zyte-common-items.git@autopages
+number-parser
