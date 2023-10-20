@@ -2,10 +2,10 @@ requirements:
   file: requirements.txt
 stacks:
   default: scrapy:2.11
-  staging/708935: scrapy:2.11
+  staging/PROJECT_ID: scrapy:2.11
 
 endpoints:
   staging: https://staging.zyte.com/api/
-project: staging/708935
+project: staging/PROJECT_ID
 apikeys:
-  staging: 9bdefea1500746ef906574c712f5cf16
+  staging: ZYTAN_SCRAPY_CLOUD_KEY

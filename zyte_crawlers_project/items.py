@@ -5,5 +5,5 @@ from zyte_common_items import Product
 
 
 @attrs.define
-class Book(Product):
-    stock: Optional[int]
+class CustomProduct(Product):
+    epc: Optional[str]
