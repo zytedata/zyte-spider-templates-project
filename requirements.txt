@@ -50,6 +50,8 @@ charset-normalizer==3.3.0
     #   requests
 clear-html==0.4.0
     # via zyte-common-items
+click==8.1.7
+    # via shub
 constantly==15.1.0
     # via twisted
 cryptography==41.0.4
@@ -63,6 +65,10 @@ cssselect==1.2.0
     #   scrapy
 distlib==0.3.7
     # via virtualenv
+docker-py==1.10.6
+    # via shub
+docker-pycreds==0.4.0
+    # via docker-py
 filelock==3.12.4
     # via
     #   tldextract
@@ -162,22 +168,30 @@ python-dateutil==2.8.2
     #   time-machine
     #   web-poet
 pyyaml==6.0.1
-    # via pre-commit
+    # via
+    #   pre-commit
+    #   shub
 queuelib==1.6.2
     # via scrapy
 requests==2.31.0
     # via
+    #   docker-py
     #   requests-file
     #   scrapinghub
+    #   shub
     #   tldextract
 requests-file==1.5.1
     # via tldextract
 retrying==1.3.4
-    # via scrapinghub
+    # via
+    #   scrapinghub
+    #   shub
 runstats==2.0.0
     # via zyte-api
 scrapinghub==2.4.0
-    # via scrapinghub-entrypoint-scrapy
+    # via
+    #   scrapinghub-entrypoint-scrapy
+    #   shub
 scrapinghub-entrypoint-scrapy==0.17.1
     # via -r requirements.in
 scrapy==2.11.0
@@ -200,13 +214,18 @@ scrapy-zyte-api[provider]==0.12.2
     #   zyte-crawlers
 service-identity==23.1.0
     # via scrapy
+shub==2.10.0
+    # via -r requirements.in
 six==1.16.0
     # via
     #   automat
+    #   docker-py
+    #   docker-pycreds
     #   python-dateutil
     #   requests-file
     #   retrying
     #   scrapinghub
+    #   shub
 sqlitedict==2.1.0
     # via scrapy-poet
 tenacity==8.2.3
@@ -219,8 +238,12 @@ tldextract==5.0.1
     # via
     #   scrapy
     #   url-matcher
+toml==0.10.2
+    # via shub
 tqdm==4.66.1
-    # via zyte-api
+    # via
+    #   shub
+    #   zyte-api
 twisted==22.10.0
     # via
     #   scrapy
@@ -251,6 +274,8 @@ web-poet==0.15.0
     #   scrapy-poet
     #   scrapy-zyte-api
     #   zyte-common-items
+websocket-client==1.6.4
+    # via docker-py
 yarl==1.9.2
     # via aiohttp
 zope-interface==6.1
@@ -268,4 +293,5 @@ zyte-parsers==0.3.0
     # via zyte-common-items
 
 # The following packages are considered to be unsafe in a requirements file:
+# pip
 # setuptools

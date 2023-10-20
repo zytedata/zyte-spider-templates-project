@@ -3,6 +3,7 @@ Scrapy
 # Zyte integration
 scrapinghub-entrypoint-scrapy  # Scrapy Cloud integration
 scrapy-zyte-api  # Zyte API integration
+shub  # Scrapy Cloud client
 # TODO: Get from PyPI:
 -e zyte-crawlers # Zyte AI-powered spiders
 
