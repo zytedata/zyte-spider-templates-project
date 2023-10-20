@@ -99,7 +99,7 @@ available in this project. You can also:
 
     Define your spiders in Python files and modules within
     ``<project ID>/spiders/``.
-￼
+
 -   Use `web-poet <https://web-poet.readthedocs.io/en/stable/>`_ and
     `scrapy-poet <https://scrapy-poet.readthedocs.io/en/stable/>`_ to modify
     the parsing behavior of spiders, in all, some, or specific websites.
