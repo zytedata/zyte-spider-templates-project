@@ -2,7 +2,7 @@ import re
 
 import attrs
 from number_parser import parse_number
-from web_poet import BrowserResponse, Returns, field, handle_urls
+from web_poet import HttpResponse, Returns, field, handle_urls
 from zyte_common_items import AggregateRating, AutoProductPage
 
 from ..items import Book
@@ -11,7 +11,7 @@ from ..items import Book
 @handle_urls("books.toscrape.com")
 @attrs.define
 class BookPage(AutoProductPage, Returns[Book]):
-    response: BrowserResponse
+    response: HttpResponse
 
     @field
     async def aggregateRating(self):
