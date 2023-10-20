@@ -8,6 +8,10 @@ shub  # Scrapy Cloud client
 # At the moment it needs to be installed from a local folder for local
 # development, and from an egg for Scrapy Cloud.
 #-e zyte-crawlers # Zyte AI-powered spiders
+# zyte-crawlers deps:
+pydantic
+scrapy-poet
+scrapy-spider-metadata
 
 # Static code checking
 pre-commit

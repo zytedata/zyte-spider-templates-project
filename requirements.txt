@@ -9,7 +9,11 @@ aiohttp==3.8.6
 aiosignal==1.3.1
     # via aiohttp
 andi==0.4.1
-    # via web-poet
+    # via
+    #   scrapy-poet
+    #   web-poet
+annotated-types==0.6.0
+    # via pydantic
 async-lru==2.0.4
     # via web-poet
 async-timeout==4.0.3
@@ -21,6 +25,7 @@ attrs==23.1.0
     #   clear-html
     #   number-parser
     #   price-parser
+    #   scrapy-poet
     #   service-identity
     #   twisted
     #   web-poet
@@ -118,12 +123,14 @@ packaging==23.2
     # via
     #   parsel
     #   scrapy
+    #   scrapy-spider-metadata
     #   scrapy-zyte-api
     #   web-poet
 parsel==1.8.1
     # via
     #   itemloaders
     #   scrapy
+    #   scrapy-poet
     #   web-poet
     #   zyte-parsers
 platformdirs==3.11.0
@@ -144,6 +151,12 @@ pyasn1-modules==0.3.0
     # via service-identity
 pycparser==2.21
     # via cffi
+pydantic==2.4.2
+    # via
+    #   -r requirements.in
+    #   scrapy-spider-metadata
+pydantic-core==2.10.1
+    # via pydantic
 pydispatcher==2.0.7
     # via scrapy
 pyopenssl==23.2.0
@@ -183,7 +196,13 @@ scrapy==2.11.0
     # via
     #   -r requirements.in
     #   scrapinghub-entrypoint-scrapy
+    #   scrapy-poet
+    #   scrapy-spider-metadata
     #   scrapy-zyte-api
+scrapy-poet==0.16.0
+    # via -r requirements.in
+scrapy-spider-metadata==0.1.2
+    # via -r requirements.in
 scrapy-zyte-api==0.12.2
     # via -r requirements.in
 service-identity==23.1.0
@@ -200,10 +219,14 @@ six==1.16.0
     #   retrying
     #   scrapinghub
     #   shub
+sqlitedict==2.1.0
+    # via scrapy-poet
 tenacity==8.2.3
     # via zyte-api
 time-machine==2.13.0
-    # via web-poet
+    # via
+    #   scrapy-poet
+    #   web-poet
 tldextract==5.0.1
     # via
     #   scrapy
@@ -215,11 +238,18 @@ tqdm==4.66.1
     #   shub
     #   zyte-api
 twisted==22.10.0
-    # via scrapy
+    # via
+    #   scrapy
+    #   scrapy-poet
 typing-extensions==4.8.0
-    # via twisted
+    # via
+    #   pydantic
+    #   pydantic-core
+    #   twisted
 url-matcher==0.3.0
-    # via web-poet
+    # via
+    #   scrapy-poet
+    #   web-poet
 urllib3==2.0.7
     # via requests
 virtualenv==20.24.5
@@ -233,7 +263,9 @@ w3lib==2.1.2
     #   zyte-api
     #   zyte-parsers
 web-poet==0.15.0
-    # via zyte-common-items
+    # via
+    #   scrapy-poet
+    #   zyte-common-items
 websocket-client==1.6.4
     # via docker-py
 yarl==1.9.2
