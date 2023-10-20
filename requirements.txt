@@ -1,2 +1,11 @@
 Scrapy==2.11.0
-zyte-spider-templates==0.0.1
+# zyte-spider-templates==0.0.1
+web-poet==0.15.0
+scrapy-poet==0.16.0
+scrapy-zyte-api==0.12.1
+
+pydantic
+scrapy-spider-metadata
+zyte-common-items
+
+scrapinghub-entrypoint-scrapy==0.17.1
