@@ -2,9 +2,11 @@
 zyte-crawlers-project
 =====================
 
-This is a Scrapy project that uses spiders defined in `zyte-spider-templates`_.
-
-.. _zyte-spider-templates: https://github.com/zytedata/zyte-spider-templates
+This is a starting template for a `Scrapy
+<https://docs.scrapy.org/en/latest/>`_ project, with built-in integration with
+Zyte technologies (`scrapy-zyte-api
+<https://github.com/scrapy-plugins/scrapy-zyte-api>`_, `zyte-spider-templates
+<https://github.com/zytedata/zyte-spider-templates>`_).
 
 Requirements
 ============
@@ -17,11 +19,34 @@ You also need a `Zyte API`_ subscription.
 
 .. _Zyte API: https://docs.zyte.com/zyte-api/get-started.html
 
+First steps
+===========
+
+After you clone this repository, follow these step to make it yours:
+
+#.  Rename the ``zyte_crawlers_project`` folder to a valid Python module name
+    that you would like to use as your project ID, and update ``scrapy.cfg``
+    and ``<project ID>/settings.py`` (``SCRAPY_POET_DISCOVER`` and
+    ``SPIDER_MODULES`` settings) accordingly.
+
+#.  For local development, assign your `Zyte API key
+    <https://app.zyte.com/o/zyte-api/api-access>`_ to the ``ZYTE_API_KEY``
+    environment variable, for example, using `direnv <https://direnv.net/>`_.
+
+    .. note:: `Scrapy Cloud
+        <https://docs.zyte.com/scrapy-cloud/get-started.html>`_
+        automatically configures your API key through a Scrapy setting.
+
+#.  Remove or replace the ``LICENSE`` and ``README.rst`` files.
+
+#.  Delete ``.git``, and start a fresh Git repository::
+
+        git init
+        git add -A
+        git commit -m "Initial commit"
+
 Usage
 =====
-
-.. note:: As some modifications to the files in this repo are needed before it
-   can be used, it's recommended to fork it.
 
 This is an already created and configured Scrapy project so when you follow
 guides like the `Scrapy Cloud tutorial
@@ -30,20 +55,19 @@ most of the parts that talk about creating and configuring it. Still, you need
 some additional configuration specific to your account. Here is a short guide
 for using this project on Scrapy Cloud.
 
-1. Create a Scrapy Cloud project on the Zyte dashboard if you don't have it
-   yet.
-2. Make sure you have a Zyte API subscription. For Scrapy Cloud runs the API
-   key will be used automatically, for local runs you need to set a setting or
-   an environment variable, as described in `scrapy-zyte-api docs
-   <https://github.com/scrapy-plugins/scrapy-zyte-api#quick-start>`_.
-3. Run ``shub login`` and enter your `Scrapy Cloud API key
-   <https://app.zyte.com/o/settings/apikey>`_.
-4. Deploy your project with ``shub deploy 000000``, replacing ``000000`` with
-   your Scrapy Cloud project ID (found in the project dashboard URL).
-   Alternatively, put the project ID into the ``scrapinghub.yml`` file to be
-   able to run simply ``shub deploy``.
-5. Now you should be able to create smart spiders on your Scrapy Cloud project
-   using the templates from this project.
+#.  Create a Scrapy Cloud project on the Zyte dashboard if you don't have it
+    yet.
+#.  Make sure you have a Zyte API subscription. For Scrapy Cloud runs the API
+    key will be used automatically, for local runs you need to set a setting or
+    an environment variable, as described in the first steps above.
+#.  Run ``shub login`` and enter your `Scrapy Cloud API key
+    <https://app.zyte.com/o/settings/apikey>`_.
+#.  Deploy your project with ``shub deploy 000000``, replacing ``000000`` with
+    your Scrapy Cloud project ID (found in the project dashboard URL).
+    Alternatively, put the project ID into the ``scrapinghub.yml`` file to be
+    able to run simply ``shub deploy``.
+#.  Now you should be able to create smart spiders on your Scrapy Cloud project
+    using the templates from this project.
 
 For more information and more verbose descriptions of specific steps you can
 check:
