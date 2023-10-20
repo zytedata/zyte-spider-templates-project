@@ -4,11 +4,7 @@ Scrapy
 scrapinghub-entrypoint-scrapy  # Scrapy Cloud integration
 scrapy-zyte-api  # Zyte API integration
 shub  # Scrapy Cloud client
-# TODO: Get from PyPI.
-# At the moment it needs to be installed from a local folder for local
-# development, and from an egg for Scrapy Cloud.
-#-e zyte-crawlers # Zyte AI-powered spiders
-# zyte-crawlers deps:
+# TODO: Get zyte-crawlers from PyPI instead of embedding it. Its deps:
 pydantic
 scrapy-poet
 scrapy-spider-metadata

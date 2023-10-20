@@ -12,7 +12,7 @@ SPIDER_MIDDLEWARES = {
 }
 SPIDER_MODULES = [
     "zyte_crawlers_project.spiders",
-    "zyte_crawlers.spiders",
+    "zyte_crawlers_project.zyte_crawlers.spiders",
 ]
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 

@@ -1,9 +1,9 @@
 from pydantic import Field
 from scrapy_poet import DummyResponse
 from scrapy_spider_metadata import Args
-from zyte_crawlers.spiders.ecommerce import EcommerceSpider, EcommerceSpiderParams
 
 from ..items import Book
+from ..zyte_crawlers.spiders.ecommerce import EcommerceSpider, EcommerceSpiderParams
 
 
 class BooksToScrapeComTemplateParams(EcommerceSpiderParams):
