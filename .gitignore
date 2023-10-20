@@ -1,13 +1,11 @@
-.env/
-.coverage
-.mypy_cache/
-.tox/
-build/
-dist/
-htmlcov/
-coverage.xml
-docs/_build
+# Python
 *.egg-info/
 __pycache__/
-coverage-html/
-.idea/
+
+# Results of README.rst examples and recommendations
+/.envrc
+/output.jsonl
+/venv/
+
+# TODO: Remove
+/zyte-crawlers/

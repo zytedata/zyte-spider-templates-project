@@ -1,0 +1,18 @@
+[flake8]
+# Black compatibility
+max-line-length = 88
+ignore =
+    # Prefer line breaks before binary operators, not after (W504).
+    W503,
+
+    # Allow for missing docstrings.
+    D100,
+    D101,
+    D102,
+    D103,
+    D104,
+    D105,
+    D107,
+
+    # Allow whitespace before ':' for Black compatibility
+    E203,

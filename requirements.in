@@ -1,0 +1,10 @@
+Scrapy
+
+# Zyte integration
+scrapinghub-entrypoint-scrapy  # Scrapy Cloud integration
+scrapy-zyte-api  # Zyte API integration
+# TODO: Get from PyPI:
+-e zyte-crawlers # Zyte AI-powered spiders
+
+# Static code checking
+pre-commit
