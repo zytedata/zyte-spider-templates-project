@@ -1,4 +1,6 @@
 requirements:
   file: requirements.txt
+  eggs:
+  - zyte_crawlers-0.0.1-py3.11.egg
 stacks:
   default: scrapy:2.11

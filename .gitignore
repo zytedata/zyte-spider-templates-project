@@ -6,3 +6,7 @@ __pycache__/
 /.envrc
 /output.jsonl
 /venv/
+
+# TODO: Remove
+# Needs to be cloned locally, but an egg needs to be used on Scrapy Cloud.
+/zyte-crawlers/
