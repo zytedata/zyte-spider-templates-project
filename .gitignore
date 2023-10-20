@@ -6,6 +6,3 @@ __pycache__/
 /.envrc
 /output.jsonl
 /venv/
-
-# TODO: Remove
-/zyte-crawlers/
