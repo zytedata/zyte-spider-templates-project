@@ -1,29 +1,13 @@
 import re
 
-import attrs
-from number_parser import parse_number
-from web_poet import HttpResponse, Returns, field, handle_urls
-from zyte_common_items import AggregateRating, AutoProductPage
+from web_poet import Returns, field, handle_urls
+from zyte_common_items import AutoProductPage
 
 from ..items import Book
 
 
 @handle_urls("books.toscrape.com")
-@attrs.define
 class BookPage(AutoProductPage, Returns[Book]):
-    response: HttpResponse
-
-    @field
-    async def aggregateRating(self):
-        element_class = self.response.css(".star-rating::attr(class)").get()
-        if not element_class:
-            return None
-        rating_str = element_class.split(" ")[-1]
-        rating = parse_number(rating_str)
-        if not rating:
-            return None
-        return AggregateRating(ratingValue=rating, bestRating=5)
-
     @field
     async def stock(self):
         for entry in await self.additionalProperties:

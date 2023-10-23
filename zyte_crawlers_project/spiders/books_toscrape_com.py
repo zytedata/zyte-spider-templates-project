@@ -1,3 +1,5 @@
+from decimal import Decimal
+
 from pydantic import Field
 from scrapy_poet import DummyResponse
 from scrapy_spider_metadata import Args
@@ -7,9 +9,11 @@ from ..zyte_crawlers.spiders.ecommerce import EcommerceSpider, EcommerceSpiderPa
 
 
 class BooksToScrapeComTemplateParams(EcommerceSpiderParams):
-    min_rating: int = Field(
-        title="Minimum rating",
-        default=0,
+    min_price: str = Field(
+        title="Minimum price",
+        default="0",
+        pattern=r"^\d+(\.\d+)?$",
+        strip_whitespace=True,
     )
 
 
@@ -22,10 +26,9 @@ class BooksToScrapeComTemplate(EcommerceSpider, Args[BooksToScrapeComTemplatePar
     }
 
     def parse_product(self, response: DummyResponse, product: Book):
-        if product.aggregateRating.ratingValue < self.args.min_rating:
+        if Decimal(product.price) < Decimal(self.args.min_price):
             self.logger.debug(
-                f"Dropped due to low rating ({product.aggregateRating.ratingValue}): "
-                f"{product}"
+                f"Dropped due to low price ({product.price}): " f"{product}"
             )
             return
         yield product
