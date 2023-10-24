@@ -1,6 +1,6 @@
-=====================
-zyte-crawlers-project
-=====================
+=============================
+zyte-spider-templates-project
+=============================
 
 This is a starting template for a `Scrapy
 <https://docs.scrapy.org/en/latest/>`_ project, with built-in integration with
