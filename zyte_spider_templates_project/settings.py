@@ -11,14 +11,14 @@ SPIDER_MIDDLEWARES = {
     "scrapy_poet.RetryMiddleware": 275,
 }
 SPIDER_MODULES = [
-    "zyte_crawlers_project.spiders",
+    "zyte_spider_templates_project.spiders",
     "zyte_crawlers.spiders",
 ]
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 
 # scrapy-poet
 SCRAPY_POET_DISCOVER = [
-    "zyte_crawlers_project.page_objects",
+    "zyte_spider_templates_project.page_objects",
 ]
 SCRAPY_POET_PROVIDERS = {
     "scrapy_zyte_api.providers.ZyteApiProvider": 1100,
