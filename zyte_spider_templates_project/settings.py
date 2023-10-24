@@ -1,4 +1,4 @@
-# Scrapy settings for zyte_crawlers_project project
+# Scrapy settings for zyte_spider_templates_project project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,18 +7,18 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "zyte_crawlers_project"
+BOT_NAME = "zyte_spider_templates_project"
 
 SPIDER_MODULES = [
     # spiders defined in zyte-spider-templates
     "zyte_spider_templates.spiders",
     # spiders defined in this project
-    "zyte_crawlers_project.spiders",
+    "zyte_spider_templates_project.spiders",
 ]
-NEWSPIDER_MODULE = "zyte_crawlers_project.spiders"
+NEWSPIDER_MODULE = "zyte_spider_templates_project.spiders"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "zyte_crawlers_project (+http://www.yourdomain.com)"
+#USER_AGENT = "zyte_spider_templates_project (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -115,5 +115,5 @@ SCRAPY_POET_DISCOVER = [
     # page objects defined in zyte-spider-templates
     "zyte_spider_templates.page_objects",
     # page objects defined in this project
-    "zyte_crawlers_project.page_objects",
+    "zyte_spider_templates_project.page_objects",
 ]

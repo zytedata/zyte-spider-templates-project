@@ -26,10 +26,10 @@ First steps
 
 After you clone this repository, follow these step to make it yours:
 
-#.  Rename the ``zyte_crawlers_project`` folder to a valid Python module name
-    that you would like to use as your project ID, and update ``scrapy.cfg``
-    and ``<project ID>/settings.py`` (``SCRAPY_POET_DISCOVER`` and
-    ``SPIDER_MODULES`` settings) accordingly.
+#.  Rename the ``zyte_spider_templates_project`` folder to a valid Python
+    module name that you would like to use as your project ID, and update
+    ``scrapy.cfg`` and ``<project ID>/settings.py`` (``SCRAPY_POET_DISCOVER``
+    and ``SPIDER_MODULES`` settings) accordingly.
 
 #.  For local development, assign your `Zyte API key
     <https://app.zyte.com/o/zyte-api/api-access>`_ to the ``ZYTE_API_KEY``
