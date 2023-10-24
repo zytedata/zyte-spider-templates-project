@@ -1,6 +1,6 @@
-=====================
-zyte-crawlers-project
-=====================
+=============================
+zyte-spider-templates-project
+=============================
 
 This is a Scrapy project that uses spiders defined in `zyte-spider-templates`_.
 
