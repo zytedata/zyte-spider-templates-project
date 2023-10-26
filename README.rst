@@ -37,7 +37,8 @@ After you clone this repository, follow these step to make it yours:
 
     .. note:: `Scrapy Cloud
         <https://docs.zyte.com/scrapy-cloud/get-started.html>`_
-        automatically configures your API key through a Scrapy setting.
+        automatically provides Zyte API key for the jobs, if you have a
+        subscription.
 
 #.  Remove or replace the ``LICENSE`` and ``README.rst`` files.
 
@@ -75,6 +76,7 @@ for using this project on Scrapy Cloud.
 For more information and more verbose descriptions of specific steps you can
 check:
 
+* `The Scrapy documentation <https://docs.scrapy.org>`_.
 * `The Scrapy Cloud tutorial
   <https://docs.zyte.com/web-scraping/tutorial/cloud.html>`_.
 * `The shub documentation <https://shub.readthedocs.io/>`_.
