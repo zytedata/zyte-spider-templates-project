@@ -16,7 +16,7 @@ Requirements
 * Scrapy 2.11+
 * zyte-spider-templates
 
-You also need a `Zyte API`_ subscription.
+You also need a `Zyte API`_ subscription for Zyte API features, including AI-powered spiders.
 
 .. _Zyte API: https://docs.zyte.com/zyte-api/get-started.html
 
