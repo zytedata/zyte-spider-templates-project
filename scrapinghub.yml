@@ -1,0 +1,10 @@
+# Configure your Zyte Cloud projects here,
+# see https://shub.readthedocs.io/en/stable/configuration.html
+# and https://docs.zyte.com/web-scraping/tutorial/cloud.html
+
+#projects:
+#  default: NNNNNN
+stacks:
+  default: scrapy:2.11-20231009
+requirements:
+  file: requirements.txt
