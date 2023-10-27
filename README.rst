@@ -70,8 +70,9 @@ for using this project on Scrapy Cloud.
     your Scrapy Cloud project ID (found in the project dashboard URL).
     Alternatively, put the project ID into the ``scrapinghub.yml`` file to be
     able to run simply ``shub deploy``.
-#.  Now you should be able to create smart spiders on your Scrapy Cloud project
-    using the templates from this project.
+#.  Now you should be able to `create smart spiders
+    <https://docs.zyte.com/web-scraping/guides/no-code/index.html#create-a-spider>`_
+    on your Scrapy Cloud project using the templates from this project.
 
 For more information and more verbose descriptions of specific steps you can
 check:
