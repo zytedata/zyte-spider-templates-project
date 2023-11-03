@@ -1,2 +1,2 @@
 Scrapy==2.11.0
-zyte-spider-templates==0.2.0
+zyte-spider-templates==0.3.0
