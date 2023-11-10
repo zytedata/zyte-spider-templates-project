@@ -1,3 +1,8 @@
+from itemadapter import ItemAdapter
+from zyte_common_items import ZyteItemAdapter
+
+ItemAdapter.ADAPTER_CLASSES.appendleft(ZyteItemAdapter)
+
 BOT_NAME = "zyte_spider_templates_project"
 
 SPIDER_MODULES = [
