@@ -25,6 +25,8 @@ SCHEDULER_DISK_QUEUE = "scrapy.squeues.PickleFifoDiskQueue"
 SCHEDULER_MEMORY_QUEUE = "scrapy.squeues.FifoMemoryQueue"
 SPIDER_MIDDLEWARES = {
     "scrapy_poet.RetryMiddleware": 275,
+    "scrapy.spidermiddlewares.offsite.OffsiteMiddleware": None,
+    "zyte_spider_templates.middlewares.AllowOffsiteMiddleware": 500,
     "zyte_spider_templates.middlewares.CrawlingLogsMiddleware": 1000,
 }
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
