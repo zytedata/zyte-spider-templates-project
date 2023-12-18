@@ -109,6 +109,6 @@ available in this project. You can also:
     the parsing behavior of spiders, in all, some, or specific websites.
 
     Define your page objects in Python files and modules within
-    ``<project ID>/page_objects/``.
+    ``<project ID>/pages/``.
 
 .. _zyte-spider-templates: https://github.com/zytedata/zyte-spider-templates
