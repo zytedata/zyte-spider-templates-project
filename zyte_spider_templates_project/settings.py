@@ -24,6 +24,7 @@ REQUEST_FINGERPRINTER_CLASS = "scrapy_zyte_api.ScrapyZyteAPIRequestFingerprinter
 SCHEDULER_DISK_QUEUE = "scrapy.squeues.PickleFifoDiskQueue"
 SCHEDULER_MEMORY_QUEUE = "scrapy.squeues.FifoMemoryQueue"
 SPIDER_MIDDLEWARES = {
+    "scrapy_zyte_api.ScrapyZyteAPISpiderMiddleware": 100,
     "scrapy_poet.RetryMiddleware": 275,
     "scrapy.spidermiddlewares.offsite.OffsiteMiddleware": None,
     "zyte_spider_templates.middlewares.AllowOffsiteMiddleware": 500,
