@@ -49,6 +49,13 @@ After you clone this repository, follow these step to make it yours:
         git add -A
         git commit -m "Initial commit"
 
+#.  Create a Python virtual environment and install ``requirements.txt`` into
+    it::
+
+        python3 -m venv venv
+        . venv/bin/activate
+        pip install -r requirements.txt
+
 
 Usage
 =====
