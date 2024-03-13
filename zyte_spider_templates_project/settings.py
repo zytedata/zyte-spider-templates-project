@@ -15,9 +15,6 @@ CLOSESPIDER_TIMEOUT_NO_ITEM = 600
 ADDONS = {
     "scrapy_zyte_api.Addon": 500,
 }
-DOWNLOADER_MIDDLEWARES = {
-    "scrapy_poet.InjectionMiddleware": 543,
-}
 SCHEDULER_DISK_QUEUE = "scrapy.squeues.PickleFifoDiskQueue"
 SCHEDULER_MEMORY_QUEUE = "scrapy.squeues.FifoMemoryQueue"
 SPIDER_MIDDLEWARES = {
