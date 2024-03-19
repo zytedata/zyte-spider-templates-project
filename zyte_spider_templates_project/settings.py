@@ -29,6 +29,3 @@ SCRAPY_POET_DISCOVER = [
     "zyte_spider_templates.pages",
     "zyte_spider_templates_project.pages",
 ]
-SCRAPY_POET_PROVIDERS = {
-    "scrapy_zyte_api.providers.ZyteApiProvider": 1100,
-}
