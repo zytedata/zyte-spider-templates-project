@@ -11,7 +11,7 @@ SPIDER_MODULES = [
 ]
 NEWSPIDER_MODULE = "zyte_spider_templates_project.spiders"
 
-CLOSESPIDER_TIMEOUT_NO_ITEM = 600
+CLOSESPIDER_TIMEOUT_NO_ITEM = 900
 ADDONS = {
     "scrapy_zyte_api.Addon": 500,
 }
