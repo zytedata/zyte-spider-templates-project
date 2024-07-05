@@ -14,6 +14,7 @@ NEWSPIDER_MODULE = "zyte_spider_templates_project.spiders"
 CLOSESPIDER_TIMEOUT_NO_ITEM = 900
 ADDONS = {
     "scrapy_zyte_api.Addon": 500,
+    "duplicate_url_discarder.Addon": 600,
 }
 SCHEDULER_DISK_QUEUE = "scrapy.squeues.PickleFifoDiskQueue"
 SCHEDULER_MEMORY_QUEUE = "scrapy.squeues.FifoMemoryQueue"
