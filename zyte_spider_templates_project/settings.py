@@ -30,3 +30,19 @@ SCRAPY_POET_DISCOVER = [
     "zyte_spider_templates.pages",
     "zyte_spider_templates_project.pages",
 ]
+
+# duplicate-url-discarder
+DUD_ATTRIBUTES_PER_ITEM = {
+    "zyte_common_items.Product": [
+        "canonicalUrl",
+        "brand",
+        "name",
+        "gtin",
+        "mpn",
+        "productId",
+        "sku",
+        "color",
+        "size",
+        "style"
+    ],
+}
