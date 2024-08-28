@@ -31,6 +31,9 @@ SCRAPY_POET_DISCOVER = [
     "zyte_spider_templates_project.pages",
 ]
 
+# scrapy-zyte-api
+ZYTE_API_RETRY_POLICY = "zyte_api.aggressive_retrying"
+
 # duplicate-url-discarder
 DUD_ATTRIBUTES_PER_ITEM = {
     "zyte_common_items.Product": [
