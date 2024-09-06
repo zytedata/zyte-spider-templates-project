@@ -51,7 +51,6 @@ DUD_ATTRIBUTES_PER_ITEM = {
 }
 
 # spidermon
-SPIDERMON_ENABLED = True
 SPIDERMON_SPIDER_CLOSE_MONITORS = (
     "zyte_spider_templates_project.monitors.CustomSpiderCloseMonitorSuite",
 )
