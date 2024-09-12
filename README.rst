@@ -119,3 +119,12 @@ available in this project. You can also:
     ``<project ID>/pages/``.
 
 .. _zyte-spider-templates: https://github.com/zytedata/zyte-spider-templates
+
+
+Monitoring
+==========
+
+The project installs `spidermon <https://spidermon.readthedocs.io/en/latest/>`_
+and configures some useful monitors, but it doesn't enable them by default. To
+do that you should add ``SPIDERMON_ENABLED = True`` to your project settings
+(either ``settings.py`` or Scrapy Cloud settings).
