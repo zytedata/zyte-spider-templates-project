@@ -61,10 +61,6 @@ SPIDERMON_FIELD_COVERAGE_RULES = {
     "Product/name": 1.0,
     "Product/metadata": 1.0,
 }
-SPIDERMON_ITEM_COUNT_INCREASE = 1  # At least 1 item every 5 minutes
-SPIDERMON_PERIODIC_MONITORS = {
-   'spidermon.contrib.scrapy.monitors.PeriodicItemCountMonitorSuite': 500,
-}
 SPIDERMON_UNWANTED_HTTP_CODES = {
     400: {"max_percentage": 0.3},
     500: {"max_percentage": 0.2},
