@@ -12,11 +12,10 @@ Zyte technologies (`scrapy-zyte-api
 Requirements
 ============
 
-* Python 3.8+
-* Scrapy 2.11+
-* zyte-spider-templates
+Requires Python 3.9+.
 
-You also need a `Zyte API`_ subscription for Zyte API features, including AI-powered spiders.
+For Zyte API features, including AI-powered spiders, a `Zyte API`_ subscription
+is also required.
 
 .. _Zyte API: https://docs.zyte.com/zyte-api/get-started.html
 
