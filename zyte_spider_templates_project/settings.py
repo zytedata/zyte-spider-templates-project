@@ -20,6 +20,12 @@ SCHEDULER_DISK_QUEUE = "scrapy.squeues.PickleFifoDiskQueue"
 SCHEDULER_MEMORY_QUEUE = "scrapy.squeues.FifoMemoryQueue"
 SCHEDULER_PRIORITY_QUEUE = "scrapy.pqueues.DownloaderAwarePriorityQueue"
 
+DOWNLOADER_MIDDLEWARES = {
+    "scrapy_poet.InjectionMiddleware": 543,
+    "scrapy_zyte_api.ScrapyZyteAPIDownloaderMiddleware": 1000,
+    "zyte_spider_templates.middlewares.MaxRequestsPerSeedDownloaderMiddleware": 100,
+}
+
 SPIDER_MIDDLEWARES = {
     "scrapy_poet.RetryMiddleware": 275,
     "scrapy.spidermiddlewares.offsite.OffsiteMiddleware": None,
@@ -56,12 +62,12 @@ DUD_ATTRIBUTES_PER_ITEM = {
         "sku",
         "color",
         "size",
-        "style"
+        "style",
     ],
     "zyte_common_items.Article": [
-            "canonicalUrl",
-            "headline",
-            "datePublishedRaw",
-            "authors"
-        ],
+        "canonicalUrl",
+        "headline",
+        "datePublishedRaw",
+        "authors",
+    ],
 }
