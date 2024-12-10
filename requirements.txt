@@ -2,3 +2,4 @@ Scrapy==2.11.2
 scrapy-zyte-api[provider]>=0.22.1
 zyte-spider-templates==0.10.0
 duplicate-url-discarder[rules]>=0.2.0
+zyte-spider-templates@git+https://github.com/zytedata/zyte-spider-templates@articles_to_main

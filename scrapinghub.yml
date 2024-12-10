@@ -8,3 +8,4 @@ stacks:
   default: scrapy:2.11-20241022
 requirements:
   file: requirements.txt
+endpoint: https://app-staging.zyte.com/api/
