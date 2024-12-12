@@ -11,9 +11,9 @@ SPIDER_MODULES = [
 NEWSPIDER_MODULE = "zyte_spider_templates_project.spiders"
 
 ADDONS = {
-    "zyte_spider_templates.Addon": 100,
     "scrapy_zyte_api.Addon": 500,
     "duplicate_url_discarder.Addon": 600,
+    "zyte_spider_templates.Addon": 700,
 }
 
 SPIDER_MIDDLEWARES = {
