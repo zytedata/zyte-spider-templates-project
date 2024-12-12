@@ -16,14 +16,8 @@ ADDONS = {
     "duplicate_url_discarder.Addon": 600,
 }
 
-DOWNLOADER_MIDDLEWARES = {
-    "scrapy_poet.InjectionMiddleware": 543,
-    "scrapy_zyte_api.ScrapyZyteAPIDownloaderMiddleware": 1000,
-}
-
 SPIDER_MIDDLEWARES = {
     "scrapy_poet.RetryMiddleware": 275,
-    "scrapy_zyte_api.ScrapyZyteAPISpiderMiddleware": 100,
 }
 
 # scrapy-poet
