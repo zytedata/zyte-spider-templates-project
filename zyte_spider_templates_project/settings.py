@@ -5,6 +5,11 @@ ItemAdapter.ADAPTER_CLASSES.appendleft(ZyteItemAdapter)
 
 BOT_NAME = "zyte_spider_templates_project"
 
+SPIDER_MODULES = [
+    "zyte_spider_templates.spiders",
+    "zyte_spider_templates_project.spiders",
+]
+
 NEWSPIDER_MODULE = "zyte_spider_templates_project.spiders"
 
 ADDONS = {
