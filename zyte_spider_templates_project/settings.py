@@ -17,7 +17,10 @@ ADDONS = {
     "duplicate_url_discarder.Addon": 600,
     "zyte_spider_templates.Addon": 700,
 }
-
+DOWNLOADER_MIDDLEWARES = {
+    "scrapy.downloadermiddlewares.stats.DownloaderStats": None,
+    "scrapy_poet.DownloaderStatsMiddleware": 850,
+}
 SPIDER_MIDDLEWARES = {
     "scrapy_poet.RetryMiddleware": 275,
 }
