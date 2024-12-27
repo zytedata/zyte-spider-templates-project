@@ -5,6 +5,6 @@
 #projects:
 #  default: NNNNNN
 stacks:
-  default: scrapy:2.11-20241022
+  default: scrapy:2.12-20241202
 requirements:
   file: requirements.txt
