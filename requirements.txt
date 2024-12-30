@@ -1,4 +1,5 @@
-Scrapy==2.11.2
-scrapy-zyte-api[provider]>=0.22.1
-zyte-spider-templates==0.11.1
-duplicate-url-discarder[rules]>=0.2.0
+duplicate-url-discarder[rules]>=0.3.0
+scrapinghub[msgpack]  # zyte-spider-templates dep, use [msgpack] for speed.
+Scrapy==2.12.0
+scrapy-zyte-api[provider]>=0.25.2
+zyte-spider-templates==0.11.2

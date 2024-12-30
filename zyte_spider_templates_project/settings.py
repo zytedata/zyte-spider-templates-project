@@ -1,4 +1,7 @@
+from logging import INFO
+
 from itemadapter import ItemAdapter
+from scrapy.logformatter import LogFormatter, DROPPEDMSG
 from zyte_common_items import ZyteItemAdapter
 
 ItemAdapter.ADAPTER_CLASSES.appendleft(ZyteItemAdapter)
@@ -24,6 +27,22 @@ DOWNLOADER_MIDDLEWARES = {
 SPIDER_MIDDLEWARES = {
     "scrapy_poet.RetryMiddleware": 275,
 }
+
+
+class CustomLogFormatter(LogFormatter):
+    def dropped(self, item, exception, response, spider):
+        return {
+            'level': INFO,
+            'msg': DROPPEDMSG,
+            'args': {
+                'exception': exception,
+                'item': item,
+            }
+        }
+
+
+LOG_FORMATTER = CustomLogFormatter
+
 
 # scrapy-poet
 SCRAPY_POET_DISCOVER = [
