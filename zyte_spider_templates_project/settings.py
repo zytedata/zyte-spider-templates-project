@@ -13,16 +13,10 @@ SPIDER_MODULES = [
 NEWSPIDER_MODULE = "zyte_spider_templates_project.spiders"
 
 ADDONS = {
+    "scrapy_poet.Addon": 300,
     "scrapy_zyte_api.Addon": 500,
     "duplicate_url_discarder.Addon": 600,
     "zyte_spider_templates.Addon": 700,
-}
-DOWNLOADER_MIDDLEWARES = {
-    "scrapy.downloadermiddlewares.stats.DownloaderStats": None,
-    "scrapy_poet.DownloaderStatsMiddleware": 850,
-}
-SPIDER_MIDDLEWARES = {
-    "scrapy_poet.RetryMiddleware": 275,
 }
 
 # scrapy-poet
