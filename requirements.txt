@@ -1,4 +1,4 @@
 duplicate-url-discarder[rules]>=0.2.0
-scrapy==2.11.2
+scrapy==2.17.0
 scrapy-poet>=0.26.0
 zyte-spider-templates==0.12.0
