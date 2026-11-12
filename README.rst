@@ -12,7 +12,7 @@ Zyte technologies (`scrapy-zyte-api
 Requirements
 ============
 
-Requires Python 3.9+.
+Requires Python 3.11+.
 
 For Zyte API features, including AI-powered spiders, a `Zyte API`_ subscription
 is also required.
